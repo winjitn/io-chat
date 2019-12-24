@@ -1,0 +1,25 @@
+.ctn {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgb(29, 29, 29);
+}
+
+.join {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 0);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 60px;
+}

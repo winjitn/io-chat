@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+  border: solid grey 1px;
+  overflow: hidden;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#messages li {
+  color: white;
+  padding: 5px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+#messages li:nth-child(odd) {
+  background: rgb(22, 22, 22);
+}
+
+#form {
+  width: 101%;
+}
+
+ul {
+  width: 100%;
+}
+
+#status {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.remove {
+  animation: 2s exit forwards;
+}
+
+@keyframes exit {
+  50% {
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(0, -100%);
+  }
+
+  100% {
+    transform: translate(0, -100%);
+  }
+}
